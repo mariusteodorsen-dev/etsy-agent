@@ -14,7 +14,7 @@ app.use(express.json());
 
 // ── CONFIG (sett disse som Environment Variables på Railway) ─
 const CFG = {
-  ANTHROPIC_KEY:    process.env.ANTHROPIC_KEY    || "",
+  ANTHROPIC_KEY: process.env.ANTHROPIC_API_KEY || process.env.ANTHROPIC_KEY || "",
   ETSY_API_KEY:     process.env.ETSY_API_KEY     || "",
   ETSY_SHOP_ID:     process.env.ETSY_SHOP_ID     || "",
   ETSY_ACCESS_TOKEN:process.env.ETSY_ACCESS_TOKEN|| "",
